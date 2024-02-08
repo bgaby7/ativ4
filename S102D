@@ -1,0 +1,31 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.containera}>Cachorros </Text>
+      <div style={styles.abc}><Text>Os cachorros são companheiros leais e amorosos que enchem nossas vidas de alegria e afeto. Desde os pequeninos e enérgicos filhotes até os sábios e gentis cães mais velhos, cada um traz consigo uma personalidade única e cativante. Esses animais incríveis não apenas nos proporcionam amor incondicional, mas também nos ensinam lições valiosas sobre lealdade, perseverança e gratidão.  </Text> </div>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'top',
+  },
+  abc: {
+  alignItems: 'center',
+  border: '1px solid red',
+  backgroundColor: '#ff3',
+  fontSize: '90px',
+  maxWidth: '1000px'
+  },
+  containera: {
+   fontSize: '100px',
+   }
+  });
